@@ -1,0 +1,31 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    }
+    /*-Style cơ bản cho website-*/
+    body {
+    font-family: Times New Roman (serif);
+    }
+    #menu ul {
+       background: #C20000;
+       list-style-type: none;
+       text-align: center;
+    }
+    #menu li {
+       color:#F8F8FF;
+       display: inline-block;
+       width: 150px;
+       height: 40px;
+       line-height: 50px;
+       margin-left: -5px;
+    }
+    #menu a {
+       text-decoration: none;
+       color: #fff;
+       display: block;
+    }
+    #menu a:hover {
+       background: #F1F1F1;
+       color: #333;
+    }
