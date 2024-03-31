@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CÂU1 KT</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background-color: hsl(226, 62%, 80%);
+        }
+
+        .header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .sidebar:hover {
+            transform: translateY(-10px);
+        }
+
+        .image-frame {
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .image-frame img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .image-frame:hover img {
+            transform: scale(1.1);
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .sidebar p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #333;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>LAPTOP DÀNH CHO HỌC TRỰC TUYẾN</h1>
+        <p>Do ảnh hưởng của dịch COVID-19, trong năm học mới này, nhiều học sinh tại một số tỉnh thành phố như Hà Nội, TP.HCM sẽ tiến hành học tập qua hình thức online trực tuyến dẫn đến việc nhiều học sinh không đủ điều kiện để online học tập. Các mẫu máy được hỗ trợ trong việc học trực tuyến có thể tham khảo:</p>
+    </div>
+
+    <div class="content">
+        <div class="sidebar">
+            <div class="image-frame">
+                <img src="/sr_face-removebg-preview.png" alt="Surface Laptop 3 13.5">
+            </div>
+            <h2>Surface Laptop 3 13.5</h2>
+            <p>@Ngọc Hoàng 09 Sep 2023 (Đã xem 1024)<br> Thông tin sản phẩm và bảo hành<br> Tình trạng sản phẩm mới 100%, nguyên seal<br>Bảo hành 12 tháng 1 đổi 1 theo chính sách của Microsoft<br>Phụ kiện: Máy, sạc, fullbox</p>
+            <a href="#" class="button">Đọc tiếp</a>
+        </div>
+
+        <div class="sidebar">
+            <div class="image-frame">
+                <img src="/R-removebg-preview.png">
+            </div>
+            <h2>Laptop Samsung X180 Barbie</h2>
+            <p>Được thiết kế tinh tế trong từng đường nét, hoàn hảo trong sự kết hợp màu sắc nội thất. Nơi đây hội tụ đầy đủ dịch vụ và là không gian nghỉ dưỡng lý tưởng dành cho cả gia đình, mang đến cảm giác thoải mái.....</p>
+            <a href="#" class="button">Đọc tiếp</a>
+        </div>
+
+        <div class="sidebar">
+            <div class="image-frame">
+                <img src="/OIP-removebg-preview (1).png" alt="ThinkPadX1 Carbon Gen 9">
+            </div>
+            <h2>ThinkPadX1 Carbon Gen 9</h2>
+            <p>Khai thác sức mạnh chữa bệnh của thiên nhiên và khung cảnh tuyệt đẹp, một nhà trị liệu Spa chuyên dụng có mặt Swan Resort. Phòng trị liệu đầy đủ tiện nghi, nước nóng, rộng rãi - mang đến cảm giác thư giãn và chăm sóc sức khỏe tuyệt vời....</p>
+            <a href="#" class="button">Đọc tiếp</a>
+        </div>
+    </div>
+</body>
+
+</html>
