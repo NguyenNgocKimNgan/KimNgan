@@ -1,0 +1,128 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.swiper-container {
+    width: 30%;
+    height: 30%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước slide */
+    max-height: 100%; /* Đảm bảo ảnh không vượt quá kích thước slide */
+    border-radius: 4px;
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0.8;
+}
+
+/* Zoom effect on hover */
+.swiper-slide:hover img {
+    transform: scale(1.2);
+}
+
+
+/* Zoom effect on hover */
+.swiper-slide:hover img {
+    transform: scale(1.2);
+}
+
+/* CSS cho ảnh */
+img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    transition: 0.256s;
+}
+
+/* Hiệu ứng phóng to khi hover */
+.image img:hover {
+    transform: scale(1.2); /* Phóng to ảnh khi hover */
+}
+
+/* CSS cho thư viện ảnh */
+.gallery {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 1, 1, 0.547);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.6, 0.8); /* Thu nhỏ thư viện ảnh khi chưa kích hoạt */
+    transition: 0.5s;
+    align-self: center;
+    justify-self: center;
+    border-radius: 5px;
+}
+
+/* CSS cho nút đóng thư viện ảnh */
+.close {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    font-size: 35px;
+}
+
+/* CSS cho nút điều khiển */
+.control {
+    font-size: 35px;
+    position: absolute;
+}
+
+.control.prev {
+    left: 15px;
+}
+
+.control.right {
+    right: 15px;
+}
+
+/* CSS cho nội dung của thư viện ảnh */
+.gallery_inner {
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+}
+
+/* Hiển thị thư viện ảnh */
+.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(0.8);
+}
+
+/* CSS cho ảnh active */
+.img-zoom {
+    transform: scale(1.2); /* Phóng to ảnh lên 1.2 lần */
+    transition: transform 0.5s; /* Thời gian chuyển đổi là 0.5s */
+}
+
+/* Hiệu ứng phóng to khi hover */
+.img-zoom:hover {
+    transform: scale(1.5); /* Phóng to ảnh lên 1.5 lần */
+}
